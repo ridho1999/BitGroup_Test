@@ -1,0 +1,33 @@
+(Using C++ Online Compiler)
+3.	Diamond Pattern
+#include<iostream>
+using namespace std;
+int main()
+{
+    int baris, spasi;
+    baris = 8;
+    
+    spasi = baris-1;
+    
+    for(int i = 1; i<=baris; i++)
+    {
+        for(int j = 1; j<=spasi; j++)
+            cout<<" ";
+        spasi--;
+        for(int j = 1; j<=(2*i-1); j++)
+            cout<<"*";
+        cout<<endl;
+    }
+    spasi = 1;
+    for(int i = 1; i<=(baris-1); i++)
+    {
+        for(int j = 1; j<=spasi; j++)
+            cout<<" ";
+        spasi++;
+        for(int j = 1; j<=(2*(baris-i)-1); j++)
+            cout<<"*";
+        cout<<endl;
+    }
+    cout<<endl;
+    return 0;
+}
